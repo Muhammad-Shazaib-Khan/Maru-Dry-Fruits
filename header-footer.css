@@ -1,0 +1,238 @@
+@font-face {
+    font-family: font !important;
+    src: url("vertopal.com_uK_24rSEd-Uqwk4jY1RyKvi8Ww.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.6vw;
+}
+
+nav .nav-after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.17vw;
+    background-color: rgb(255, 187, 0);
+}
+
+nav a img {
+    height: 6.1vw;
+}
+
+nav .nav-btns {
+    display: flex;
+    gap: 1.75vw;
+    align-items: center;
+}
+
+nav .nav-btns a {
+    color: white;
+    position: relative;
+    font-size: 1.5vw;
+}
+
+nav .nav-btns a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.17vw;
+    left: 0;
+    width: 0;
+    height: 0.17vw;
+    background-color: rgb(255, 187, 0);
+    transition: width .2s linear;
+}
+
+nav .nav-btns a:hover::after {
+    width: 100%;
+}
+
+.current-page {
+    position: relative !important;
+}
+
+.current-page::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: -0.17vw !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 0.17vw !important;
+    background-color: rgb(255, 187, 0) !important;
+}
+
+nav .user {
+    display: flex;
+    gap: 1.75vw;
+    align-items: center;
+}
+
+nav .user .search-field-container {
+    width: 26.2vw;
+    height: 2.1vw;
+    display: flex;
+    justify-content: right;
+}
+
+nav .user .search-field-container .search-field {
+    position: relative;
+    color: white;
+    width: 2%;
+    height: 100%;
+    border: 0.08vw solid white;
+    background-color: transparent;
+    border-radius: 2.6vw;
+}
+
+nav .user i {
+    font-size: 1.5vw;
+}
+
+nav .user a {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 30.5vw;
+}
+
+footer .img {
+    width: 100%;
+    height: 100%;
+    background-image: url(footer-img.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    z-index: -1;
+}
+
+footer .img .footer-top {
+    margin-top: 4.4vw;
+    padding: 0 8.7vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.6vw;
+}
+
+footer .img .footer-top h2 {
+    font-size: 2.1vw;
+}
+
+footer .img p, footer .img a {
+    font-size: 1.4vw;
+}
+
+footer .img .footer-top .about {
+    z-index: 3;
+    width: 24.4vw;
+}
+
+footer .img .footer-top .about a {
+    color: rgb(255, 187, 0);
+}
+
+footer .img .footer-top .about .social-links {
+    display: flex;
+    gap: 1.75vw;
+}
+
+footer .img .footer-top .about .social-links i {
+    color: white;
+}
+
+footer .img .footer-top .help {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .img .footer-top .support {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .img .footer-top .contact .footer-line {
+    display: flex;
+}
+
+footer .img .footer-top h2 {
+    color: rgb(255, 187, 0);
+    font-family: font;
+    font-weight: 100;
+    margin-bottom: 2.6vw;
+}
+
+footer .img .footer-bottom {
+    width: 100%;
+    padding: 1.3vw 8.7vw;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.08vw solid rgb(231, 231, 231);
+    position: relative;
+}
+
+footer .img .footer-bottom .tabs {
+    display: flex;
+    gap: 1.75vw;
+}
+
+footer .img .footer-bottom .go-top {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.75vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 0.25vw solid rgb(255, 187, 0);
+    border-radius: 100%;
+}
+
+footer .img .footer-bottom .go-top i {
+    color: rgb(255, 187, 0);
+}
+
+footer .img p, footer .img a {
+    color: white;
+}

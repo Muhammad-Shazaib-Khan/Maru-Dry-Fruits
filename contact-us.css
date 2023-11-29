@@ -1,0 +1,183 @@
+@font-face {
+    font-family: font;
+    src: url("vertopal.com_uK_24rSEd-Uqwk4jY1RyKvi8Ww.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hero {
+    position: fixed;
+    width: 100%;
+    height: 80vh;
+    background-image: url(shop-hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+#page1 {
+    width: 100%;
+    height: 70vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 h1 {
+    margin-top: 100px;
+    font-family: font;
+    font-weight: 100;
+    font-size: 4rem;
+    color: white;
+}
+
+#page1 h2 {
+    font-family: font;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+#page2 {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 7vw;
+}
+
+#main #page2 .box1 {
+    margin-bottom: 5.2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#main #page2 .box1 h1 {
+    color: rgb(136, 65, 39);
+    font-family: font;
+    font-weight: 100;
+    font-size: 3.5vw;
+}
+
+#main #page2 .box1 .stars #second {
+    font-size: 2vw;
+}
+
+#main #page2 .box1 .stars #first {
+    color: rgb(255, 187, 0);
+}
+
+#page2 .boxes {
+    display: flex;
+    gap: 30px;
+}
+
+#page2 .box {
+    width: 330px;
+    height: 220px;
+    border: 2px solid rgb(136, 65, 39);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    transition: all .3s ease;
+    padding: 2vw;
+}
+
+#page2 .box:hover {
+    border-color: #f4b323;
+    padding: 3vw;
+}
+
+#page2 .box h1 {
+    font-family: font;
+    font-weight: 100;
+    color: rgb(136, 65, 39);
+}
+
+#page2 .box i {
+    padding: 15px;
+    background-color: rgb(136, 65, 39);
+    border-radius: 50%;
+    color: white;
+    transition: all .3s ease;
+}
+
+#page2 .box:hover i {
+    background-color: orange;
+    color: black;
+    position: relative;
+}
+
+#page3 {
+    display: flex;
+    justify-content: center;
+    padding: 7vw;
+    background-color: white;
+}
+
+#page3 iframe {
+    width: 50%;
+    height: 50.5vw;
+}
+
+#page3 form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+
+#page3 form input {
+    height: 4.5vw;
+    width: 100%;
+    padding: 0 3vw;
+    border-radius: 10vw;
+    outline: none;
+    border: 1px solid rgb(138, 138, 138);
+    transition: all .2s linear;
+}
+
+#page3 form input:focus {
+    border-color: rgb(136, 65, 39);
+    border-width: 2px;
+}
+
+#page3 form button {
+    height: 4.5vw;
+    font-size: 2vw;
+    padding: 0 8vw;
+    border-radius: 10vw;
+    border-color: rgb(136, 65, 39);
+    outline: none;
+}

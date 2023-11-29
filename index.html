@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-after"></div>
+            <a href="index.html"><img src="logo.png" alt=""></a>
+            <div class="nav-btns">
+                <a href="index.html" class="home">Home</a>
+                <a href="shop.html" class="shop">Shop</a>
+                <a href="disclaimer.html" class="disclaimer">Disclaimer</a>
+                <a href="about-us.html" class="about">About</a>
+                <a href="contact-us.html" class="contact">Contact Us</a>
+            </div>
+            <div class="user">
+                <div class="search-field-container">
+                    <input type="text" class="search-field">
+                </div>
+                <i class="fa-solid fa-magnifying-glass" style="color: white;" onclick="search_clicked()"></i>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: white;"></i></a>
+                <a href="sign-in.html"><i class="fa-solid fa-user" style="color: white;"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="main">
+        <div id="page1">
+            <div class="bg-image"></div>
+            <div class="text-2">
+                <h2>Maru Dry Fruits</h2>
+                <div class="line">
+                    <hr>
+                    <h3 id="flat">FLAT 10% OFF</h3>
+                    <hr>
+                </div>
+                <div class="line-2">
+                    <h4>USE COUPON: <span>SP118</span></h4>
+                </div>
+            </div>
+        </div>
+        <div id="page2">
+            <div class="box1">
+                <h1>Best Products</h1>
+                <p>MARU DRY FRUITS</p>
+                <div class="stars">
+                    <i id="first" class="fa-solid fa-star"></i>
+                    <i id="second" class="fa-solid fa-star"></i>
+                    <i id="first" class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="card-0">
+                <div class="card">
+                    <div class="img" style="background-image: url('ezgif.com-webp-to-jpg.jpg');"></div>
+                    <div class="text-3">
+                        <h4>Almonds</h4>
+                        <p>$59.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img" style="background-image: url('kaju-5.jpg');"></div>
+                    <div class="text-3">
+                        <h4>Peanuts</h4>
+                        <p>$59.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img" style="background-image: url('Kaju.jpg');"></div>
+                    <div class="text-3">
+                        <h4>Raisins</h4>
+                        <p>$59.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img" style="background-image: url('Dry-2\ \(2\).jpg');"></div>
+                    <div class="text-3">
+                        <h4>Walnuts</h4>
+                        <p>$59.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img" style="background-image: url('dried-dates-levitate-white-background.jpg');"></div>
+                    <div class="text-3">
+                        <h4>Pistachios</h4>
+                        <p>$59.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page3">
+            <h4>Healty Dry Fruits</h4>
+            <h1>Get 10% Off</h1>
+            <h1>On all Items</h1><br>
+            <h4 style="color: white;">Dry fruits are concentrated sources <br> of essential nutrients like vitamins.</h4>
+            <button class="button-3">View More</button>
+            <button class="button-4">Shop Now</button>
+        </div>
+        <div id="page4">
+            <div class="left">
+                <div class="after"></div>
+                <div class="left-div">
+                    <h1>The Almonds Nut</h1><br>
+                    <p>FLAT 50% OFF TO ALL PRODUCT</p>
+                    <button class="button-left">Shop Now</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img-sec" style="background-image: url(pexel-1.jpg);">
+                    <div class="after"></div>
+                    <div class="right-div">
+                        <h1>Goji berries</h1>
+                        <button class="button-right">Shop Now</button>
+                    </div>
+                </div>
+                <div class="img-sec" style="background-image: url(pexels-2.jpg);">
+                    <div class="after"></div>
+                    <div class="right-div">
+                        <h1>Walnuts</h1>
+                        <button class="button-right">Shop Now</button>
+                    </div>
+                </div>
+                <div class="img-sec" style="background-image: url(pexels-3.jpg);">
+                    <div class="after"></div>
+                    <div class="right-div">
+                        <h1>Dates</h1>
+                        <button class="button-right">Shop Now</button>
+                    </div>
+                </div>
+                <div class="img-sec" style="background-image: url(pexels-4.jpg);">
+                    <div class="after"></div>
+                    <div class="right-div">
+                        <h1>Blueberries</h1>
+                        <button class="button-right">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page5">
+            <h1>AlMONDS/NUTS/DATES <br> 10 % OFF <br> On All Products</h1>
+            <div class="buttons">
+                <button>Order Now</button>
+                <button>Shop Now</button>
+            </div>
+        </div>
+        <div id="page6">
+            <div class="box1">
+                <h1>Our Team</h1>
+                <p>MARU DRY FRUITS</p>
+                <div class="stars">
+                    <i id="first" class="fa-solid fa-star"></i>
+                    <i id="second" class="fa-solid fa-star"></i>
+                    <i id="first" class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="card-0">
+                <div class="card">
+                    <div class="top">
+                        <div class="img" style="background-image: url(Team-Mudassar.jpeg);"></div>
+                    </div>
+                    <div class="bottom">
+                        <h1>M. Mudassar</h1>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <div class="img" style="background-image: url(Team-Hassan.JPG);"></div>
+                    </div>
+                    <div class="bottom">
+                        <h1>M. Hassan</h1>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <div class="img" style="background-image: url(Team-Fiza.jpg);"></div>
+                    </div>
+                    <div class="bottom">
+                        <h1>Fiza Azher</h1>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <div class="img" style="background-image: url(Team-A-Rehman.jfif);"></div>
+                    </div>
+                    <div class="bottom">
+                        <h1>Abdul Rehman</h1>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <div class="img" style="background-image: url(Team-Yousuf.jpg);"></div>
+                    </div>
+                    <div class="bottom">
+                        <h1>M. Yousuf</h1>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page7">
+            <div class="box1">
+                <h1>Premium Quality Nuts</h1>
+                <p>MARU DRY FRUITS</p>
+                <div class="stars">
+                    <i id="first" class="fa-solid fa-star"></i>
+                    <i id="second" class="fa-solid fa-star"></i>
+                    <i id="first" class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="images">
+                <div class="items">
+                    <div class="chota-image" style="background-image: url(Kaju-2.jpg);"></div>
+                    <h1>Heart Health</h1>
+                    <p> Many dry fruits are rich in dietary fiber, promoting digestive health and helping
+                        prevent constipation. Fiber also contributes to a feeling of fullness, which can aid in weight
+                        management.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="items">
+                    <div class="chota-image" style="background-image: url(cont-img-3.jpg);"></div>
+                    <h1>Energy Boost</h1>
+                    <p> Dry fruits are calorie-dense and provide a quick and easily accessible source of
+                        energy. They are often recommended as snacks for athletes or those needing a rapid energy boost.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="items">
+                    <div class="chota-image" style="background-image: url(cont-img.jpg);"></div>
+                    <h1>Improves Skin</h1>
+                    <p> The vitamins and antioxidants in certain dry fruits contribute to healthier skin
+                        by promoting collagen production and protecting against damage from free radicals.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="img">
+            <div class="footer-top">
+                <div class="about">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatum quidem beatae necessitatibus.</p>
+                    <a href="">Read More</a>
+                    <div class="social-links">
+                        f
+                        a
+                        i
+                    </div>
+                </div>
+                <div class="help">
+                    <h2>Help</h2>
+                    <a href="">Search</a>
+                    <a href="">Benefits</a>
+                    <a href="">Shipping Details</a>
+                </div>
+                <div class="support">
+                    <h2>Support</h2>
+                    <a href="">Contact Us</a>
+                    <a href="">About Us</a>
+                    <a href="">Refunds</a>
+                </div>
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <div class="address footer-line">
+                        ^<!-- Home Icon -->
+                        <p>Aptech North Nazimabad Center-I</p>
+                    </div>
+                    <div class="phone footer-line">
+                        ^<!-- Phone Icon -->
+                        <p>0300-2545859</p>
+                    </div>
+                    <div class="timing footer-line">
+                        ^<!-- Clock Icon -->
+                        <p>8:00AM - 11:00PM</p>
+                    </div>
+                    <div class="email footer-line">
+                        ^<!-- Mailing Icon -->
+                        <p>hng39044@gmail.com</p>
+                    </div>
+                    <!-- card img -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 Aptech Students</p>
+                <div class="tabs">
+                    <a href="">Home</a>
+                    <p>|</p>
+                    <a href="">Contact Us</a>
+                    <p>|</p>
+                    <a href="">About Us</a>
+                </div>
+                <div class="go-top"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gsap.min.js"></script>
+    <script src="gsap.min.scroll-trigger.js"></script>
+    <script src="header-footer.js"></script>
+</body>
+
+</html>

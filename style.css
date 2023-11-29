@@ -1,0 +1,652 @@
+@font-face {
+    font-family: font;
+    src: url(vertopal.com_uK_24rSEd-Uqwk4jY1RyKvi8Ww.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    transition: all .3s linear;
+}
+
+#main #page1 {
+    height: 70vw;
+    width: 100%;
+    text-align: center;
+    font-size: 4.4vw;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+#main #page1 .bg-image {
+    background-image: url(shop-hero.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#main #page1 .bg-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+#main #page1 .text-2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 3.5vw;
+    letter-spacing: 0.05rem;
+    text-transform: inherit;
+}
+
+#main #page1 .text-2 h2 {
+    font-family: font;
+    font-weight: 100;
+    color: white;
+}
+
+#main #page1 .text-2 h3,
+#main #page1 .text-2 h4 {
+    color: rgb(255, 187, 0);
+    font-weight: lighter;
+}
+
+#main #page1 .text-2 h4 span {
+    color: white;
+}
+
+#main #page1 .text-2 .line {
+    margin-top: 1.3vw;
+}
+
+#main #page1 .text-2 .line-2 {
+    margin-top: 0.85;
+}
+
+
+/* Page 2 */
+
+#main #page2 {
+    padding: 7vw;
+    background-color: transparent;
+}
+
+#main #page2 .box1 {
+    margin-bottom: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#main #page2 .box1 h1 {
+    font-family: font;
+    font-weight: 100;
+    font-size: 4vw;
+    color: rgb(136, 65, 39);
+}
+
+#main #page2 .box1 .stars #second {
+    font-size: 2vw;
+}
+
+#main #page2 .box1 .stars #first {
+    color: rgb(255, 187, 0);
+}
+
+#main #page2 .card-0 {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#main #page2 .card-0 .card {
+    height: 26.3vw;
+    width: 15vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0.85 rgba(0, 0, 0, 0.2);
+}
+
+#main #page2 .card-0 .card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + .7vw);
+    height: 0;
+    background-color: rgb(255, 187, 0);
+    z-index: -2;
+    transition: all .3s linear;
+}
+
+#main #page2 .card-0 .card:hover::after {
+    height: calc(100% + .7vw);
+}
+
+#main #page2 .card-0 .card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: calc(100% + .7vw);
+    background-color: rgb(136, 65, 39);
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+#main #page2 .card-0 .card:hover::before {
+    width: 100%;
+}
+
+#main #page2 .card-0 .card .img {
+    width: 100%;
+    height: 10vw;
+    background-size: cover;
+    background-position: center;
+}
+
+#main #page2 .card-0 .card .text-3 {
+    font-size: 2.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4vw;
+}
+
+#main #page2 .card-0 .card .text-3 h4 {
+    font-family: font;
+    font-weight: 100;
+    color: rgb(136, 65, 39);
+    font-size: 2.5vw;
+}
+
+#main #page2 .card-0 .card .text-3 p {
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+#main #page2 .card-0 .card .text-3 .rating {
+    display: flex;
+    justify-content: center;
+    gap: .2vw;
+}
+
+#main #page2 .card-0 .card .text-3 .rating i {
+    font-size: 1.2vw;
+}
+
+
+/* Page 3 */
+
+#main #page3 {
+    background-image: url(organic-nuts-snack-bowls-spoons.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 52.5vw;
+    width: 100%;
+    padding: 10vw 5vw;
+    position: relative;
+}
+
+#main #page3 h4 {
+    color: white;
+    font-size: 1.8vw;
+}
+
+#main #page3 h1 {
+    font-size: 5vw;
+    font-family: font;
+    font-weight: 100;
+    color: rgb(255, 187, 0);
+}
+
+#main #page3 .button-3 {
+    border: 0.17vw solid rgb(136, 65, 39);
+    background-color: transparent;
+    color: white;
+    padding: 1.15vw 1.75vw;
+    font-size: 1.5vw;
+    margin-top: 4.4vw;
+    border-radius: 2.6vw;
+    cursor: pointer;
+}
+
+#main #page3 .button-4 {
+    border: 0.17vw solid white;
+    background-color: transparent;
+    color: white;
+    padding: 1.15vw 1.75vw;
+    font-size: 1.5vw;
+    margin-top: 4.4vw;
+    margin-left: 1.3vw;
+    border-radius: 2.6vw;
+    cursor: pointer;
+}
+
+#main #page3 .button-3:hover, #main #page3 .button-4:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+
+
+/* Page 4 */
+
+#main #page4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vw 8vw;
+    background-color: white;
+}
+
+#main #page4 .left {
+    width: calc(30% - 1vw);
+    height: 100%;
+    background-image: url(fruits-1.jpg);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 2vw;
+}
+
+#main #page4 .left .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .3s linear all;
+    z-index: 1;
+}
+
+#main #page4 .left:hover .after {
+    width: 100%;
+}
+
+#main #page4 .left .left-div {
+    padding: 1vw;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+#main #page4 .left .left-div h1 {
+    color: rgb(255, 187, 0);
+    font-family: font;
+    font-weight: 100;
+    font-size: 3vw;
+}
+
+#main #page4 .left .left-div p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 2vw;
+}
+
+#main #page4 .left .left-div button {
+    border: 0.17vw solid rgb(136, 65, 39);
+    background-color: transparent;
+    color: white;
+    padding: 1.15vw 1.75vw;
+    display: inline-block;
+    font-size: 1.4vw;
+    cursor: pointer;
+    border-radius: 2.6vw;
+    margin: 2vw 0 0 1vw;
+}
+
+#main #page4 .left .left-div button:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;   
+}
+
+#main #page4 .right {
+    width: calc(70% - 1vw);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#main #page4 .right .img-sec {
+    width: calc(50% - 1vw);
+    height: calc(50% - 1vw);
+    background-image: url(pexel-1.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 2vw;
+}
+
+#main #page4 .right .img-sec .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .3s linear all;
+    z-index: 1;
+}
+
+#main #page4 .right .img-sec:hover .after {
+    width: 100%;
+}
+
+#main #page4 .right .img-sec .right-div {
+    width: 15.7vw;
+    padding: 1vw;
+    height: 12.6vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#main #page4 .right .img-sec .right-div h1 {
+    color: white;
+    font-family: font;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+#main #page4 .right .img-sec .right-div .button-right {
+    border: 0.17vw solid rgb(136, 65, 39);
+    background-color: transparent;
+    color: white;
+    padding: 1.15vw 1.75vw;
+    display: inline-block;
+    font-size: 1.4vw;
+    cursor: pointer;
+    border-radius: 2.6vw;
+}
+
+#main #page4 .right .img-sec .right-div .button-right:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;   
+}
+
+
+
+/* Page 5 */
+
+#page5 {
+    height: 80vh;
+    width: 100%;
+    background-image: url(dates.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#page5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    z-index: 2;
+}
+
+#page5 h1 {
+    padding-top: 4.4vw;
+    color: white;
+    font-size: 5.25vw;
+    font-family: font;
+    font-weight: 100;
+    z-index: 3;
+}
+
+#page5 .buttons {
+    z-index: 4;
+    display: flex;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+#page5 .buttons button {
+    border: 0.17vw solid white;
+    background-color: transparent;
+    color: white;
+    padding: 1.15vw 1.75vw;
+    display: inline-block;
+    font-size: 1.75vw;
+    cursor: pointer;
+    border-radius: 2.6vw;
+}
+
+#page5 .buttons button:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+
+
+
+
+/* OUR TEAM MEMBERS */
+#main #page6 {
+    padding: 7vw;
+    background-color: white;
+}
+
+#main #page6 .box1 {
+    margin-bottom: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#main #page6 .box1 h1 {
+    font-family: font;
+    font-weight: 100;
+    font-size: 4vw;
+    color: rgb(136, 65, 39);
+}
+
+#main #page6 .box1 .stars #second {
+    font-size: 2vw;
+}
+
+#main #page6 .box1 .stars #first {
+    color: rgb(255, 187, 0);
+}
+
+#main #page6 .cards {
+    display: flex;
+    gap: 0.85;
+    justify-content: space-between;
+}
+
+#main #page6 .card-0 {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#main #page6 .card-0 .card {
+    height: 26.3vw;
+    width: 18vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: .2vw solid rgb(255, 187, 0);
+    transition: all .15s ease;
+}
+
+#main #page6 .card-0 .card:hover {
+    scale: 1.1;
+}
+
+#main #page6 .card-0 .card .top {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(255, 187, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main #page6 .card-0 .card .top .img {
+    width: 14.4vw;
+    height: 14.4vw;
+    border-radius: 50%;
+    background-color: rgb(255, 187, 0);
+    background-size: cover;
+}
+
+#main #page6 .card-0 .card .bottom {
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#main #page6 .card-0 .card .bottom h1 {
+    font-family: font;
+    font-weight: 100;
+    color: rgb(136, 65, 39);
+    font-size: 2vw;
+}
+
+#main #page6 .card-0 .card .bottom .icons {
+    display: flex;
+    height: 2.6vw;
+    width: 100%;
+    margin-top: 1.75vw;
+    justify-content: space-evenly;
+}
+
+
+
+/* Page 7 */
+
+#main #page7 {
+    background-color: #e9e9e9;
+    padding: 7vw 0;
+}
+
+#main #page7 .box1 {
+    margin-bottom: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#main #page7 .box1 h1 {
+    font-family: font;
+    font-weight: 100;
+    font-size: 4vw;
+    color: rgb(136, 65, 39);
+}
+
+#main #page7 .box1 .stars #second {
+    font-size: 2vw;
+}
+
+#main #page7 .box1 .stars #first {
+    color: rgb(255, 187, 0);
+}
+
+#main #page7 .images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main #page7 .images .items {
+    width: 26.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75vw;
+}
+
+#main #page7 .images .items .chota-image {
+    background-size: cover;
+    height: 24.4vw;
+    width: 26.2vw;
+}
+
+#main #page7 .images .items h1 {
+    font-family: font;
+    font-weight: 100;
+    color: rgb(136, 65, 39);
+}
+
+#main #page7 .images .items p {
+    text-align: center;
+    font-size: 1.4vw;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+#main #page7 .images .items button {
+    border: 0.17vw solid rgb(136, 65, 39);
+    background-color: transparent;
+    color: black;
+    padding: 1.15vw 1.75vw;
+    font-size: 1.4vw;
+    cursor: pointer;
+    border-radius: 2.6vw;
+}
+
+#main #page7 .images .items button:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
